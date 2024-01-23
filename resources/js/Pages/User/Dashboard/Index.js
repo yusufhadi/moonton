@@ -45,13 +45,13 @@ export default function Dashboard({ auth, featuredMovies, movies }) {
                     Browse
                 </div>
                 <Flickity className="gap-[30px]" options={flickityOptions}>
-                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                    {movies.map((movie) => (
                         <MovieCard
-                            key={i}
-                            category="comedy"
-                            name={`The Batman In Love ${i}`}
-                            slug="the-batman-in-love"
-                            thumbnail={"/images/browse-1.png"}
+                            key={movie.id}
+                            category={movie.category}
+                            name={movie.name}
+                            slug={movie.slug}
+                            thumbnail={movie.thumbnail}
                         />
                     ))}
                 </Flickity>
