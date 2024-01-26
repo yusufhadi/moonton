@@ -21,7 +21,7 @@ export default function SubscriptionCard({
                             IDR {price.toLocaleString()}
                         </div>
                         <p className="text-gray-1 text-xs font-light">
-                            /{durationInMonth} months
+                            / {durationInMonth} months
                         </p>
                     </div>
 
